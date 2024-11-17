@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+.geist-mono {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.mainBlockHomePage {
+    height: 1000px;
+}
+
+.mainBlockImg {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 61vh;
+    /*position: relative;*/
+}
+
+.imageLogo {
+    width: 34vw;
+    height: 57vh;
+    bottom: 21vh;
+    left: 33vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.image {
+    filter: brightness(79%);
+    width: 100%;
+    height: 17vh;
+}
+
+.sectionAboutExperience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.sectionAboutExperience > h1 {
+    z-index: 1;
+    font-size: 2.6vw;
+    margin-top: 4vh;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.sectionAboutExperience > p {
+    color: gray;
+    text-align: center;
+    width: 60vw;
+    align-content: center;
+    font-size: 1.1vw;
+    font-family: Arial;
+}
+.linkWatchingNow{
+    width: 16vw;
+    height: 6vh;
+    text-align: center;
+    align-content: center;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: .5vw;
+
+}
+.GoTriangleRight{
+    font-size: 2.6vw;
+}
+.linkWatchingNow>span{
+    position: relative;
+    top: -1.6vh;
+    left: -.3vw;
+    font-size: 1.2vw;
+
+}

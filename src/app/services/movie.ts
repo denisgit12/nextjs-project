@@ -7,8 +7,8 @@ const token = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI4ZTRkZjNmYTUxMWE3NTdkZGEyOTRiOTNk
 
 
 export const movieServer = {
-    getAllMovies: (page: number): Promise<IResponseMovie> => {
-        return fetch(`https://api.themoviedb.org/3/discover/movie?page=${page}`, {
+    getAllMovies: async (page: number): Promise<IResponseMovie> => {
+        return await fetch(`https://api.themoviedb.org/3/discover/movie?page=${page}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -17,8 +17,8 @@ export const movieServer = {
             .then(value => value)
     },
 
-    getAllGenre: (): Promise<IGenre[]> => {
-        return fetch(`https://api.themoviedb.org/3/genre/movie/list`, {
+    getAllGenre: async (): Promise<IGenre[]> => {
+        return await fetch(`https://api.themoviedb.org/3/genre/movie/list`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

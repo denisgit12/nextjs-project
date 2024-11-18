@@ -1,10 +1,22 @@
 import React from 'react';
 import {movieServer} from "@/app/services/movie";
-import ImageSlider from "@/app/components/trendingSlider/TrendingSlider";
+import {DataPhotoGenre} from "@/app/components/genresCategories/dataPhotoGenre/DataPhotoGenre";
+import TrendingSlider from "@/app/components/trendingSlider/TrendingSlider";
+import {IGenreWithPhoto} from "@/app/models/IGenreWithPhoto";
 
 const GenresCategories = async () => {
-    const genres = await movieServer.getAllGenre()
-    console.log(genres)
+    const genres = await movieServer.getAllGenre();
+    const photoGenres = DataPhotoGenre;
+
+    const newArr:IGenreWithPhoto[] = []
+
+    for (const genre of genres) {
+        for (const photoGenre of photoGenres) {
+            if (genre.id === photoGenre.id){
+                newArr.push({genre, photoGenre})
+            }
+        }
+    }
     return (
         <main>
             <section>
@@ -24,9 +36,9 @@ const GenresCategories = async () => {
                 </div>
 
             </section>
-            <ImageSlider/>
             <section>
 
+                <TrendingSlider genre={newArr}/>
             </section>
         </main>
     );

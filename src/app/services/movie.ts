@@ -24,7 +24,7 @@ export const movieServer = {
                 }
             }
         ).then(resp => resp.json())
-            .then(value => value)
+            .then(value => value.genres)
         // return data;
     }
 }

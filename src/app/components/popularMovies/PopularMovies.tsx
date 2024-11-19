@@ -8,7 +8,7 @@ import PopularMoviesSlider from "@/app/components/sliders/PopularMoviesSlider";
 const PopularMovies = async () => {
     const popularMovies = await movieServer.getPopularMovie();
     return (
-        <main>
+        <main className={'mainPopularMovies'}>
             <section>
                 <div className={'divWithTrendingMovies'}>
                     <h2 className={'trendingNowH2'}>

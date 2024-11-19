@@ -31,7 +31,7 @@ const GenresCategories = async () => {
                     <p>
                         Whether you are looking for a comedy to make you laugh, a drama to make you think, or a
                         documentary
-                        to learn something new
+                        to learn something new. Here is the top 30:
 
                     </p>
                 </div>

@@ -1,13 +1,16 @@
 'use client'
+
 import React, {FC} from "react";
 import Slider from "react-slick";
-
-import './TrendingSlider.cs.css'
+import Link from "next/link";
 import Image from "next/image";
 
-import {IGenreWithPhoto} from "@/app/models/IGenreWithPhoto";
 import {FaArrowRightLong} from "react-icons/fa6";
-import Link from "next/link";
+
+import {IGenreWithPhoto} from "@/app/models/IGenreWithPhoto";
+
+import './TrendingSlider.cs.css'
+
 
 interface Props {
     genre: IGenreWithPhoto[]

@@ -10,7 +10,7 @@ const PageWithGenres = async ({params}: { params: Params }) => {
 
     const newArray:IMovie[] = []
 
-        for (let i = 0; newArray.length < 50; i++) {
+        for (let i = 0; newArray.length < 30; i++) {
 
             const {results} = await movieServer.getAllMovies(i);
             if (results){

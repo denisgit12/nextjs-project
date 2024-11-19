@@ -1,0 +1,50 @@
+.mainOneBoxDevice{
+    margin-top: 5vh;
+    color: white;
+    width: 25vw;
+    height: 27vh;
+    border: 1px solid #3a3939;
+    border-radius: .7vw;
+/*background: #151717;*/
+    background: rgb(21,23,23);
+    background: linear-gradient(55deg, rgba(21,23,23,1) 68%, rgba(241, 6, 60, 0.07) 90%);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.mainBoxIconDevice{
+    display: flex;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    width: 20vw;
+    height: 6vh;
+    gap: 1vw;
+    margin-left: 2vw;
+    margin-top: 5vh;
+
+}
+.boxIconDevice{
+    width: 4vw;
+    height: 7vh;
+    background: #202020;
+    font-size: 2.2vw;
+    color: red;
+    border-radius: .4vw;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #616161;
+
+}
+.mainBoxIconDevice>span{
+    font-size: 1.4vw;
+}
+.span>svg{
+    padding-top: 10px;
+}
+.boxDeviceDescription{
+    font-size: 1vw;
+    margin-top: 3vh;
+    margin-left: 2vw;
+    width: 21vw;
+}

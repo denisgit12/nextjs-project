@@ -11,6 +11,9 @@ import './styleAllAboutOneMovie.css'
 import {movieServer} from "@/app/services/movie";
 import CenterMode from "@/app/(clients)/SliderWithCompanies ";
 import ReviewAboutMovie from "@/app/components/reviewAboutMovie/ReviewAboutMovie";
+import {CiCalendar, CiStar} from "react-icons/ci";
+import {HiOutlineTranslate} from "react-icons/hi";
+import RatingStars from "@/app/(clients)/ratingStar/RatingStars";
 
 type Props = {
     id: string | number,
@@ -78,11 +81,72 @@ const AllAboutOneMovie: FC<Props> = async ({id}: Props) => {
 
                 <section className={'mainBoxDescription'}>
 
+                    <div className={'boxDescriptionDetails'}>
+
+                        <div className={'boxLogoData'}>
+
+                            <div className={'boxLogo'}>
+                                <CiCalendar className={'logosDescriptionDetails'}/>
+                                <h3>Released Year</h3>
+                            </div>
+                            <div className={'boxData'}>
+                                {detailMovie.release_date}
+                            </div>
+
+                        </div>
+
+                        <div className={'boxLogoData marginTop'}>
+
+                            <div className={'boxLogo'}>
+                                <HiOutlineTranslate className={'logosDescriptionDetails'}/>
+                                <h3>Available Languages</h3>
+                            </div>
+                            <div className={'boxData boxSpokenLanguages'}>
+                                {detailMovie.spoken_languages.map((value, index) => <div key={index}
+                                                                                         className={'spokenLanguage'}>
+                                    {value.name}
+                                </div>)}
+                            </div>
+
+                        </div>
+                        <div className={'boxLogoData marginTop'}>
+
+                            <div className={'boxLogo'}>
+                                <CiStar className={'logosDescriptionDetails'}/>
+                                <h3>Rating</h3>
+                            </div>
+                            <div className={'boxData boxBorderStar'}>
+                                <RatingStars number={detailMovie.vote_average}/>
+
+                            </div>
+
+                        </div>
+
+                        <div className={'boxLogoData marginTop'}>
+
+                            <div className={'boxLogo'}>
+                                <CiStar className={'logosDescriptionDetails'}/>
+                                <h3>Genres</h3>
+                            </div>
+                            <div className={'boxData boxSpokenLanguages'}>
+                                {detailMovie.genres.map((value, index) => <div key={index}
+                                                                                         className={'spokenLanguage'}>
+                                    <Link className={'linkByGenre'} href={`/homes/${value.id}`}>
+                                        {value.name}
+                                    </Link>
+
+                                </div>)}
+                            </div>
+
+                        </div>
+
+                    </div>
                 </section>
             </section>
 
         </main>
-    );
+    )
+        ;
 };
 
 export default AllAboutOneMovie;

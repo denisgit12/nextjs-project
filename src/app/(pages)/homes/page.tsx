@@ -7,20 +7,20 @@ import imgLineaOne from './image/imgLineaOne.png'
 import imgLineaTwo from './image/imgLineaTwo.png'
 import imgLineaThree from './image/imgLineaThree.png'
 import imgLineaFour from './image/imgLineaFour.png'
-
-import { GoTriangleRight } from "react-icons/go";
-
 import imgLogo from './image/imgLogo.png'
-import './styleHomePage.css'
+
+import {FaYoutube} from "react-icons/fa";
+
 import GenresCategories from "@/app/components/genresCategories/GenresCategories";
 import PopularMovies from "@/app/components/popularMovies/PopularMovies";
-import {FaYoutube} from "react-icons/fa";
-// import {movieServer} from "@/app/services/movie";
+
+import './styleHomePage.css'
+import ProvideVariousDevices from "@/app/components/provideVariousDevices/ProvideVariousDevices";
+import ChooseThePlan from "@/app/(clients)/chooseThePlan/ChooseThePlan";
+
 
 const HomePage = async () => {
-    // const data = await movieServer.getAllMovies(1)
-    // console.log(data.results);
-    // console.log(genres)
+
     return (
         <main className={'mainBlockHomePage'}>
             <section className={'mainBlockImg'}>
@@ -50,6 +50,12 @@ const HomePage = async () => {
             </section>
             <section>
                 <PopularMovies/>
+            </section>
+            <section>
+                <ProvideVariousDevices/>
+            </section>
+            <section>
+                <ChooseThePlan/>
             </section>
         </main>
 

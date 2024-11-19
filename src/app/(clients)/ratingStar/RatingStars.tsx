@@ -9,8 +9,6 @@ type Props = {
 const RatingStars:FC<Props> = ({number}:{number:number}) => {
     const [rating, setRating] = useState(Math.round(number/2))
 
-    console.log(number);
-
     const handleRating = (rate: number) => {
         setRating(rate)
     }

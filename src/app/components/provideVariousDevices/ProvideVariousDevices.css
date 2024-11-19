@@ -1,0 +1,28 @@
+.mainBlockTextProvide {
+    width: 80vw;
+    margin-left: 10vw;
+}
+
+.mainBlockTextProvide > h2 {
+    color: white;
+    font-size: 2vw;
+    font-family: "Geist Mono", monospace;
+}
+
+.mainBlockTextProvide > p {
+    width: 78vw;
+    flex-wrap: wrap;
+    color: gray;
+    font-size: 1.3vw;
+
+}
+
+.mainBoxWithAllDevices{
+    margin-left: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10vw;
+    flex-wrap: wrap;
+    gap: 1.9vw;
+}

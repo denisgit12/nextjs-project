@@ -201,9 +201,75 @@
 }
 
 .mainBoxDescription {
+    margin-top: 10vh;
+
     width: 29vw;
-    height: 75vh;
+    height: 85vh;
     background: #202020;
     border: 1px solid #4c4a4a;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxDescriptionDetails {
+    margin-top: -10vh;
+    width: 22vw;
+    /*border: 1px solid beige;*/
+    /*height: 63vh;*/
+    text-align: start;
+}
+
+.marginTop {
+    margin-top: 2vh;
+}
+
+.boxLogo {
+    display: flex;
+    align-items: center;
+    color: gray;
+}
+
+.boxLogo > h3 {
+    margin-left: .3vw;
+    font-size: 1.3vw;
+}
+
+.logosDescriptionDetails {
+    font-size: 1.8vw;
+}
+
+.boxData {
+    margin-left: .4vw;
+    color: white;
+    font-size: 1.2vw;
+}
+
+.boxSpokenLanguages {
+    display: flex;
+    gap: .5vw;
+    flex-wrap: wrap;
+}
+.spokenLanguage{
+    width: 7vw;
+    height: 5vh;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: .6vw;
+    background: #151515;
+}
+.boxBorderStar{
+    width: 13vw;
+    height: 8vh;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    border-radius: .6vw;
+    background: #151515;
+}
+.linkByGenre{
+    color: white;
+    text-decoration: none;
 }

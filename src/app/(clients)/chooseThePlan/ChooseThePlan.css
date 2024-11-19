@@ -1,0 +1,127 @@
+.maninBlockChoosePlan {
+    /*margin-left: 10vw;*/
+    /*margin-right: 10vw;*/
+    width: 80vw;
+    /*margin-top: 7vw;*/
+    /*margin-bottom: 4vw;*/
+    margin: 7vw 10vw 4vw;
+}
+
+.mainBoxChooseOption {
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    font-family: "Geist Mono", monospace;
+
+}
+
+.mainBoxChooseOption > div > h2 {
+    font-size: 2vw;
+    color: white;
+}
+
+.mainBoxChooseOption > div > p {
+    width: 60vw;
+    font-size: 1vw;
+    color: gray;
+}
+
+.mainBoxButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 9vh;
+    gap: 2vw;
+    border: 1px solid #3a3939;
+    border-radius: .6vw;
+    color: white;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.boxButton {
+    width: 7vw;
+    height: 7vh;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+
+}
+
+.activeButton {
+    transition: .2s;
+    border-radius: .6vw;
+    background: #3a3a3a;
+    height: 7vh;
+    border: 1px solid #3a3939;
+
+}
+
+.mainBoxCardsPlan {
+    margin-top: 3vh;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+.cardPlan {
+    width: 25vw;
+    height: 35vh;
+    border: 1px solid #3a3939;
+    background: #181919;
+    border-radius: .6vw;
+    box-shadow: rgba(9, 9, 9, 0.25) 0px 15px 20px -12px;
+
+}
+
+.typeOfPlan {
+    color: white;
+    font-size: 1.3vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+
+.describeOfPlan {
+    margin-left: 3vw;
+    flex-wrap: wrap;
+    width: 21vw;
+    font-size: 1.1vw;
+    color: gray;
+}
+
+.mainBoxButtonsCards {
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: white;
+    margin-top: 2vw;
+    align-content: center;
+    justify-content: space-between;
+    font-size: 1.2vw;
+}
+.planPrice{
+    margin-left: 3vw;
+    color: white;
+    font-size: 1.6vw;
+}
+.buttonStartFree {
+    cursor: pointer;
+    width: 9.5vw;
+    height: 6vh;
+    border: 1px solid #3a3939;
+    align-content: center;
+    text-align: center;
+    border-radius: .4vw ;
+}
+.buttonChoosePlan{
+    cursor: pointer;
+    width: 9.5vw;
+    height: 6vh;
+    border: 1px solid #3a3939;
+    align-content: center;
+    text-align: center;
+    border-radius: .4vw ;
+    background: red;
+}

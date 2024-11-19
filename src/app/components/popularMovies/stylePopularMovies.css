@@ -5,7 +5,11 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+.mainPopularMovies{
+    margin-bottom: 350px;
 
+    /*height: 40vh;*/
+}
 .divWithTrendingMovies{
     margin-top: 350px;
     /*margin-top: 6vh;*/

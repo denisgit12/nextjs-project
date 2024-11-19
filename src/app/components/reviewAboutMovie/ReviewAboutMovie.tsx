@@ -10,8 +10,6 @@ type Props = {
 
 const ReviewAboutMovie: FC<Props> = async ({id}: { id: string | number }) => {
     const {results} = await movieServer.getReview(id)
-    console.log(results[0].author_details.rating);
-    console.log(results)
     return (
         <main className={'mainReviewBox'}>
             {results.length >= 0 &&
@@ -33,7 +31,7 @@ const ReviewAboutMovie: FC<Props> = async ({id}: { id: string | number }) => {
                     </div>
                 </section>
             }
-            {results.length >= 1 &&
+            {results.length > 1 &&
                 <section className={'firstReviewBox'}>
                     <div className={'mainBoxUserRating'}>
                         <div className={'boxUserName'}>

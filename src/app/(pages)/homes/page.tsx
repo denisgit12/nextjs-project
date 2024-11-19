@@ -13,6 +13,8 @@ import { GoTriangleRight } from "react-icons/go";
 import imgLogo from './image/imgLogo.png'
 import './styleHomePage.css'
 import GenresCategories from "@/app/components/genresCategories/GenresCategories";
+import PopularMovies from "@/app/components/popularMovies/PopularMovies";
+import {FaYoutube} from "react-icons/fa";
 // import {movieServer} from "@/app/services/movie";
 
 const HomePage = async () => {
@@ -32,17 +34,22 @@ const HomePage = async () => {
                 <h1 className={'geist-mono'}>The Best Streaming Experience</h1>
                 <p>
                     StreamVibe is the best streaming experience for watching your favorite movies and shows on demand,
-                    anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters,
-                    classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content
+                    anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest
+                    blockbusters,
+                    classic movies, popular TV shows, and more. You can also create your own watchlists, so you can
+                    easily find the content
                     you want to watch.
                 </p>
                 <Link href={'/movies'} className={'linkWatchingNow'}>
-                    <GoTriangleRight className={'GoTriangleRight'} />
+                    <FaYoutube className={'GoTriangleRight'}/>
                     <span>Start watching Now</span>
                 </Link>
             </section>
             <section>
                 <GenresCategories/>
+            </section>
+            <section>
+                <PopularMovies/>
             </section>
         </main>
 

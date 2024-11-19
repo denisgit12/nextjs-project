@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+.geist-mono {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.divWithTrendingMovies{
+    margin-top: 350px;
+    /*margin-top: 6vh;*/
+    margin-left: 10vw;
+
+}
+
+.trendingNowH2{
+    color: white;
+    font-size: 2vw;
+    font-family: "Geist Mono", monospace;
+}
+.divWithTrendingMovies>p{
+    color: gray;
+    font-size: 1.3vw;
+
+}

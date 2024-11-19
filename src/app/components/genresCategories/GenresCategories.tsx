@@ -1,8 +1,12 @@
 import React from 'react';
+import AllGenresSlider from "@/app/components/sliders/AllGenresSlider";
+import {IGenreWithPhoto} from "@/app/models/IGenreWithPhoto";
+
+
 import {movieServer} from "@/app/services/movie";
 import {DataPhotoGenre} from "@/app/components/genresCategories/dataPhotoGenre/DataPhotoGenre";
-import TrendingSlider from "@/app/components/trendingSlider/TrendingSlider";
-import {IGenreWithPhoto} from "@/app/models/IGenreWithPhoto";
+
+import './styleGenresCategories.css'
 
 const GenresCategories = async () => {
     const genres = await movieServer.getAllGenre();
@@ -20,9 +24,9 @@ const GenresCategories = async () => {
     return (
         <main>
             <section>
-                <div>
-                    <h2>
-                        Explore our wide variety of categories
+                <div className={'divWithWideVariety'} >
+                    <h2 className={'exploreOurWideVarietyH2'}>
+                        Explore our wide variety of categories:
                     </h2>
                     <p>
                         Whether you are looking for a comedy to make you laugh, a drama to make you think, or a
@@ -38,7 +42,7 @@ const GenresCategories = async () => {
             </section>
             <section>
 
-                <TrendingSlider genre={newArr}/>
+                <AllGenresSlider genre={newArr}/>
             </section>
         </main>
     );

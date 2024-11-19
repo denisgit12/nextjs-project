@@ -1,25 +1,26 @@
 import React from 'react';
 
 import {movieServer} from "@/app/services/movie";
+import {IMovie} from "@/app/models/IMovie";
+import MapMoviesByGenre from "@/app/helpers/MapMovies";
 
 type Params = { id: string }
 const PageWithGenres = async ({params}: { params: Params }) => {
     const {id} = await params;
-    console.log(id);
 
-    const newArray:[] = []
+    const newArray:IMovie[] = []
 
-        for (let i = 0; newArray.length < 60; i++) {
+        for (let i = 0; newArray.length < 50; i++) {
 
-            const {results} = await movieServer.getAllMovies(i)
-            results && results.length>=0 && newArray.length < 60 && results.map(value => {
-              value.genre_ids.map(value1 => !(value1 !== +id || !newArray.push(value))) ;
-
-
-            })
+            const {results} = await movieServer.getAllMovies(i);
+            if (results){
+                MapMoviesByGenre({newArray, results, id})
+            }
 
 
         }
+
+
     console.log(newArray)
     return (
         <div>

@@ -13,7 +13,8 @@ interface Props {
     genre: IGenreWithPhoto[]
 }
 
-const TrendingSlider: FC<Props> = ({genre}) => {
+const AllGenresSlider: FC<Props> = ({genre}) => {
+    console.log(genre)
     const settings = {
         dots: true,
         infinite: true,
@@ -64,4 +65,4 @@ const TrendingSlider: FC<Props> = ({genre}) => {
     );
 };
 
-export default TrendingSlider;
+export default AllGenresSlider;

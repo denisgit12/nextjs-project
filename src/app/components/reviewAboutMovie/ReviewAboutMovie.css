@@ -1,0 +1,54 @@
+.mainReviewBox{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.firstReviewBox{
+    width: 28vw;
+    height: 23vh;
+    background: #151515;
+    border-radius: 15px;
+}
+
+.mainBoxUserRating{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.boxUserName{
+    width: 7vw;
+    height: 7vh;
+    text-align: center;
+    align-content: center;
+    color: white;
+    font-size: 1.2vw;
+    /*background: white;*/
+}
+.boxRating{
+    text-align: center;
+    align-content: center;
+    width: 13vw;
+    border: 1px solid #6c6c6c;
+    border-radius: 10px;
+    background: #202020;
+    padding-top: 10px;
+    height: 5vh;
+    font-size: 2vw;
+}
+
+.boxContent{
+    margin-top: 3%;
+    margin-left: 5%;
+    width: 90%;
+    height: 11.3vh;
+    color: white;
+    /*text-overflow:clip;*/
+    /*overflow: hidden;*/
+    overflow-y: scroll;
+    scrollbar-color: #292828 #706e6e;
+    scrollbar-width: thin;
+}

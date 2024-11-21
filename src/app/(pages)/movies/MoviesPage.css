@@ -1,0 +1,51 @@
+.mainSectionAllMovies {
+    width: 80vw;
+    /*height: 100vh;*/
+    border: 1px solid #4c4a4a;
+    box-shadow: rgba(253, 253, 253, 0.1) 0px 4px 12px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    border-radius: 1vw;
+
+}
+
+.SectionFilter {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 53%;
+}
+
+.mainSectionAllMovies > section > h1 {
+    color: white;
+    font-family: "Geist Mono", monospace;
+    font-size: 2.3vw;
+    margin: 3vw;
+}
+
+.sectionOneMovie {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 5vw;
+}
+
+.boxPagination {
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.imgFilter {
+    font-size: 1.5vw;
+    cursor: pointer;
+}

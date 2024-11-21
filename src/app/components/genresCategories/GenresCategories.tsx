@@ -21,6 +21,7 @@ const GenresCategories = async () => {
             }
         }
     }
+    console.log(newArr)
     return (
         <main>
             <section>

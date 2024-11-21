@@ -1,0 +1,35 @@
+.MainBoxOneMovie {
+    width: 20vw;
+    /*height: 48vh;*/
+    border: 1px solid #4c4a4a;
+    border-radius: 1vw;
+    box-shadow: rgba(79, 80, 81, 0.2) 0px 8px 24px;
+}
+.boxMovie{
+    text-align: center;
+    color: white;
+
+}
+.boxMovie>div{
+    align-items: center;
+    margin-top: -2vh;
+    display: flex;
+    margin-left: 4vw;
+    gap: .9vw;
+}
+.starStyle{
+    color: yellow;
+}
+.lineTwo{
+    width: .1px;
+    height: 2vh;
+    background: white;
+}
+.poster{
+
+    margin-top: 2vh;
+    width: 13vw;
+    border-radius: .5vw;
+    box-shadow: rgba(79, 80, 81, 0.2) 0px 8px 24px;
+
+}

@@ -28,15 +28,18 @@ const SliderWithCompanies: FC<Props> = ({detailMovie}: { detailMovie: IDetailMov
                     <Slider {...settings}>
                         {
                             production_companies.map((value, index) => <div key={index}>
-                                <img className={'img'} src={`https://image.tmdb.org/t/p/original${value.logo_path}`}
-                                     alt=""/>
+                                {value?.logo_path
+                                    ? <img className={'img'}
+                                           src={`https://image.tmdb.org/t/p/original${value?.logo_path}`}
+                                           alt=""/>
+                                    : <div className={'img'}></div>}
                             </div>)
                         }
                     </Slider>
 
 
                     : <img className={'img'}
-                    src={`https://image.tmdb.org/t/p/original${production_companies[0].logo_path}`}
+                    src={`https://image.tmdb.org/t/p/original${production_companies[0]?.logo_path}`}
                 alt=""/>
 
             }

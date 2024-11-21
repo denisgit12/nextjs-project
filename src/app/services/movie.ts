@@ -20,6 +20,16 @@ export const movieServer = {
         ).then(resp => resp.json())
             .then(value => value)
     },
+    searchMovies: async (page: number, query:string): Promise<IResponseMovie> => {
+        return await fetch(`https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=${page}'`, {
+
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+        ).then(resp => resp.json())
+            .then(value => value)
+    },
     getAllGenre: async (): Promise<IGenre[]> => {
         return await fetch(`https://api.themoviedb.org/3/genre/movie/list`, {
                 headers: {
@@ -50,6 +60,15 @@ export const movieServer = {
     },
     getReview: async (id:string | number): Promise<IResponseReview> => {
         return await fetch(`https://api.themoviedb.org/3/movie/${id}/reviews?language=en-US&page=1`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            }
+        ).then(resp => resp.json())
+            .then(value => value)
+    },
+    getMoviesByGenres: async (page:string | number, genre:number | string): Promise<IResponseMovie> => {
+        return await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=THE_KEY&language=en-US&sort_by=release_date.desc&page=${page}&with_genres=${genre}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }

@@ -18,16 +18,16 @@ const ReviewAboutMovie: FC<Props> = async ({id}: { id: string | number }) => {
                         <div className={'mainBoxUserRating'}>
 
                             <div className={'boxUserName'}>
-                                {results[0].author}
+                                {results[0]?.author}
                             </div>
 
                             <div className={'boxRating'}>
-                               <RatingStars number={results[0].author_details.rating}/>
+                               <RatingStars number={results[0]?.author_details.rating}/>
                             </div>
 
                         </div>
                     <div className={'boxContent'}>
-                        {results[0].content}
+                        {results[0]?.content}
                     </div>
                 </section>
             }

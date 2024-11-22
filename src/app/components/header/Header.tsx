@@ -34,7 +34,7 @@ const Header = () => {
                     <NavLinkComponent path={'/support'}>Support</NavLinkComponent>
                 </li>
                 <li className={'linkLi'}>
-                    <NavLinkComponent path={'/mov'}>Subscriptions</NavLinkComponent>
+                    <NavLinkComponent path={'/subscription'}>Subscriptions</NavLinkComponent>
                 </li>
             </ul>
 

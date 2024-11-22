@@ -1,4 +1,4 @@
-.mainSearchFormBox{
+.mainSearchFormBox {
     width: 80vw;
     height: 10vh;
     /*border: 1px solid violet;*/
@@ -26,11 +26,12 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background:  linear-gradient(90deg, rgba(248, 0, 0, 0.16) 0%, rgb(21, 21, 21) 100%);
+    background: linear-gradient(90deg, rgba(248, 0, 0, 0.16) 0%, rgb(21, 21, 21) 100%);
     border: 0;
     display: inline-block;
     transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
 }
+
 /*hover effect*/
 button:hover {
     color: #fff;
@@ -38,6 +39,7 @@ button:hover {
     box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
     transform: translateY(-3px);
 }
+
 /*button pressing effect*/
 button:active {
     box-shadow: none;
@@ -54,6 +56,41 @@ button:active {
     height: 5vh;
     padding-left: 24px;
 }
-.iconSearchMovies{
+
+.iconSearchMovies {
     font-size: 1.5vw;
+}
+
+.searchList {
+    scrollbar-color: #292828 #706e6e;
+
+    position: absolute;
+    border: 1px solid #4c4a4a;
+    box-shadow: rgba(253, 253, 253, 0.1) 0px 4px 12px;
+    background: rgba(41, 40, 40, 0.88);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /*flex-wrap: wrap;*/
+    flex-direction: column;
+    margin-top: .2vw;
+    border-radius: 1vw;
+    max-height: 30vw;
+    overflow-y: scroll;
+    color: white;
+
+}
+
+.searchList>div{
+    width: 30vw;
+}
+.searchedDate{
+    margin: 0;
+    padding: 1vw;
+    cursor: pointer;
+    font-family: "Geist Mono", monospace;
+}
+.searchedDate:hover{
+    background: rgb(34, 33, 33);
+
 }

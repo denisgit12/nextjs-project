@@ -1,0 +1,82 @@
+.mainSectionSubscription{
+    width: 90vw;
+    margin: 5vw;
+    border-radius: 1vw;
+    padding-bottom: 7vh;
+
+    border: 1px solid #4c4a4a;
+    box-shadow: rgba(253, 253, 253, 0.1) 0 4px 12px;
+    align-items: start;
+    text-align: start;
+    align-content: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.boxChooseThePlans{
+    margin: 2.5vw ;
+}
+.SectionSubscriptionOurPlans{
+    margin-top: 5vh;
+    font-family: "Geist Mono", monospace;
+    margin-left: 2vw;
+    width: 80vw;
+}
+.SectionSubscriptionOurPlans>div>h2{
+    font-size: 2vw;
+    color: white;
+}
+.SectionSubscriptionOurPlans>div>p{
+    color: white;
+    width: 60vw;
+    font-size: 1vw;
+    color: gray;
+}
+
+
+
+
+.descriptionOfAllPlans{
+    margin-top: 2.5vw;
+}
+.table{
+    width: 85vw;
+    color: gray;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    font-family: "Geist Mono", monospace;
+    font-size: 1.3vw;
+}
+.thead{
+    color: white;
+    font-size: 1.4vw;
+    margin: 0;
+    padding: 0;
+}
+.thead>tr{
+    margin: 0;
+    padding: 0;
+}
+.thead>tr>th{
+    width: 21vw;
+    height: 5vh;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #333330;
+}
+.thPopular{
+    margin-left: .4vw;
+    font-size: 1vw;
+   top: -.8vh;
+    position: relative;
+    background: red;
+}
+
+
+.tbody>tr>td{
+    width: 21vw;
+    /*height: 5vh;*/
+        margin: 0;
+    border: 1px solid #333330;
+    padding: 2vh;
+}

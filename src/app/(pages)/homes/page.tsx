@@ -54,7 +54,7 @@ const HomePage = async () => {
             <section>
                 <ProvideVariousDevices/>
             </section>
-            <section>
+            <section className={'sectionChooseThePlane'}>
                 <ChooseThePlan/>
             </section>
         </main>

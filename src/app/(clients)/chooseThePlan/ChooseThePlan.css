@@ -1,16 +1,10 @@
 .maninBlockChoosePlan {
-    /*margin-left: 10vw;*/
-    /*margin-right: 10vw;*/
     width: 80vw;
-    /*margin-top: 7vw;*/
-    /*margin-bottom: 4vw;*/
-    margin: 7vw 10vw 4vw;
 }
 
 .mainBoxChooseOption {
     display: flex;
     align-items: center;
-    /*justify-content: center;*/
     font-family: "Geist Mono", monospace;
 
 }

@@ -13,7 +13,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background: linear-gradient(45deg, #566a87, yellow);
+    background: rgb(21,23,23);
+    background: linear-gradient(45deg, #1c1b1b, #566a87);
+
     padding: 30px;
     width: 450px;
     border-radius: 20px;
@@ -23,7 +25,8 @@
 }
 
 .form:hover {
-    background: linear-gradient(45deg, yellow, #566a87);
+    background: linear-gradient(90deg, #1c1b1b, #566a87);
+
 }
 
 ::placeholder {

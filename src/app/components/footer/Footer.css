@@ -1,0 +1,64 @@
+.mainFooterSection {
+    width: 99vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 8vw;
+    background: #121313;
+}
+
+.mainFooterSection > section > h3 {
+    font-size: 1.1vw;
+    color: white;
+}
+
+.mainFooterSection > section > h4 {
+    margin: .5vw;
+    font-size: 1.1vw;
+    color: gray;
+}
+
+.mainBoxLinkToNetwork {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: .5vw;
+}
+
+.boxFacebook {
+    width: 3vw;
+    height: 5vh;
+    border-radius: .4vw;
+    background: #302929;
+    font-size: 2vw;
+    color: gray;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+}
+
+.allRightsReserved {
+    display: flex;
+    color: gray;
+    gap: 3vw;
+    margin-top: 3vh;
+    margin-right: 8vw;
+}
+
+.mainFooterSectionSecond {
+    margin-top: .1vh;
+    width: 99vw;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 8vw;
+    background: #121313;
+}
+
+.mainFooterSectionSecond > h3 {
+    margin-top: 5vh;
+    color: white;
+    margin-left: 8vw;
+}

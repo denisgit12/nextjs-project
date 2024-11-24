@@ -1,5 +1,5 @@
 import React from 'react';
-import AllGenresSlider from "@/app/components/sliders/AllGenresSlider";
+import AllGenresSlider from "@/app/(clients)/sliders/AllGenresSlider";
 import {IGenreWithPhoto} from "@/app/models/IGenreWithPhoto";
 
 
@@ -21,7 +21,6 @@ const GenresCategories = async () => {
             }
         }
     }
-    console.log(newArr)
     return (
         <main>
             <section>

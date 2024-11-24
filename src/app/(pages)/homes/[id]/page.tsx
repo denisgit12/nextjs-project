@@ -34,6 +34,7 @@ const PageWithGenres = async (props: {
                     }
                 </section>
             </section>
+            <section className={'sectionPagination'}>
             {
                 total_pages <= 500
                     ?
@@ -42,6 +43,7 @@ const PageWithGenres = async (props: {
                     <PaginationComponent totalPage={500}/>
 
             }
+            </section>
         </main>
     )
         ;

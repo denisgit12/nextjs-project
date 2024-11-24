@@ -17,7 +17,6 @@ interface Props {
 }
 
 const AllGenresSlider: FC<Props> = ({genre}) => {
-    console.log(genre)
     const settings = {
         dots: true,
         infinite: true,
@@ -31,6 +30,7 @@ const AllGenresSlider: FC<Props> = ({genre}) => {
     };
     return (
         <div>
+
             <link
                 rel="stylesheet"
                 type="text/css"

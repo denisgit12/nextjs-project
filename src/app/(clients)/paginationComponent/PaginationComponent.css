@@ -1,7 +1,7 @@
 .mainBoxPaginationComponent{
-    width: 25vw;
+    /*width: 100vw;*/
     height: 20vh;
-    margin-left: 27vw;
+    /*margin-left: 27vw;*/
     margin-top: 6vh;
 }
 .pagination{

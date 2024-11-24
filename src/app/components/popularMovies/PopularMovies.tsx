@@ -3,7 +3,7 @@ import React from 'react';
 import {movieServer} from "@/app/services/movie";
 
 import './stylePopularMovies.css'
-import PopularMoviesSlider from "@/app/components/sliders/PopularMoviesSlider";
+import PopularMoviesSlider from "@/app/(clients)/sliders/PopularMoviesSlider";
 
 const PopularMovies = async () => {
     const popularMovies = await movieServer.getPopularMovie();

@@ -1,6 +1,7 @@
 import {Metadata} from "next";
 import React from "react";
 import Header from "@/app/components/header/Header";
+import Footer from "@/app/components/footer/Footer";
 
 export const metadata: Metadata = {
     title: 'PublicLayout',
@@ -14,6 +15,7 @@ const MainLayout = ({children}: Props) => {
         <div>
             <Header/>
             {children}
+            <Footer/>
         </div>
     );
 };

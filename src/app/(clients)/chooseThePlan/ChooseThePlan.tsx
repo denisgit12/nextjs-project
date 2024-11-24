@@ -56,7 +56,7 @@ const ChooseThePlan = () => {
                                     Access to a wider selection of movies and shows, including most new releases and exclusive content
                                 </p>
                                 <h3 className={'planPrice'}>
-                                    $9.99/month
+                                    $12.99/month
                                 </h3>
                                 <div className={'mainBoxButtonsCards'}>
                                     <div className={'buttonStartFree'}>Start Free Trial</div>
@@ -72,7 +72,7 @@ const ChooseThePlan = () => {
                                     Access to a widest selection of movies and shows, including all new releases and Offline Viewing
                                 </p>
                                 <h3 className={'planPrice'}>
-                                    $9.99/month
+                                    $14.99/month
                                 </h3>
                                 <div className={'mainBoxButtonsCards'}>
                                     <div className={'buttonStartFree'}>Start Free Trial</div>

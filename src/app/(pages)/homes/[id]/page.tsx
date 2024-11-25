@@ -21,6 +21,7 @@ const PageWithGenres = async (props: {
     const getMoviesByGenre = await movieServer.getMoviesByGenres(currentPage, id);
     const {results, total_pages} = getMoviesByGenre;
     return (
+
         <main>
             <section className={'mainBoxGenre'}>
                 <section className={'sectionOneMovie'}>
